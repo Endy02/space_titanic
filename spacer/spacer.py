@@ -83,9 +83,10 @@ class Spacer:
     def evaluate_model(self, df):
         try:
             # Check Correlation
-            plt.figure(figsize=(10,10))
+            plt.figure(figsize=(15,15))
             cor = df.corr(numeric_only=True)
             sns.heatmap(cor, annot=True, cmap=plt.cm.Reds)
+            plt.savefig("correlation_matrix.png")
             plt.show()
             X_train, X_test, Y_train, Y_test = self.clean_split_dataset(df)
             # Build Model
@@ -105,6 +106,7 @@ class Spacer:
             ax.xaxis.set_ticklabels(['False','True'])
             ax.yaxis.set_ticklabels(['False','True'])
             ## Display the visualization of the Confusion Matrix.
+            plt.savefig("confusion_matrix.png")
             plt.show()
             acc = metrics.accuracy_score(Y_test, y_pred)
             self.logger.info(f"The model accuracy score is up to : {round(acc * 100 ,2)} %")
