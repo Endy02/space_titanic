@@ -1,4 +1,5 @@
-# Space Titanic
+
+<h1><img src="assets/images/logo_v2@4x.png" width=100> Space Titanic</h1>
 
 <br>
 <br>
