@@ -128,10 +128,10 @@ After the execution you will see a new CSV file named <b>"final_space_titanic.cs
 | Accuracy Score | 79.33% |
 | --- | --- |
 
-Correlation Matrix:
+Correlation Matrix:<br>
 ![Correlation Matrix](correlation_matrix.png)
-
-Confusion matrix:
+<br>
+Confusion matrix:<br>
 ![confision matrix](confusion_matrix.png)
 
 
